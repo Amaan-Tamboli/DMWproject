@@ -5,7 +5,7 @@ from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 
 
-with open("style.css") as f:
+with open("styles.css") as f:
     st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
     
 add_selectbox = st.sidebar.selectbox("Details/Developer",("Prediction","Developer"))
