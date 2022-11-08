@@ -1,3 +1,4 @@
 streamlit 
 joblib
 scikit_learn
+wordcloud
