@@ -22,7 +22,7 @@ if st.button('Predict'):
  
 wordcloud = WordCloud(width = 800, height = 800,
                 background_color ='black',
-                stopwords = stopwords,
+                stopwords = STOPWORDS,
                 min_font_size = 10).generate(ip)
                       
 plt.figure(figsize = (8, 8), facecolor = None)
