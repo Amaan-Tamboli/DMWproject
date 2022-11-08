@@ -20,7 +20,7 @@ elif(add_selectbox=="Prediction"):
       st.title(op[0])
 
 
-    wordcloud = WordCloud(max_words = 2000 , width = 1600 , height = 800 , stopwords = STOPWORDS).generate(m)
+    wordcloud = WordCloud(max_words = 2000 , width = 1600 , height = 800 , stopwords = STOPWORDS).generate(ip)
     
 
     fig = plt.figure(figsize = (8, 8), facecolor = None)
