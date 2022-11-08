@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 
-add_selectbox = st.sidebar.selectbox("Details/Developer",("Student Details","Developer"))
+add_selectbox = st.sidebar.selectbox("Details/Developer",("Prediction","Developer"))
 if add_selectbox== "Developer":
     developer()
     
