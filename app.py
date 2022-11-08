@@ -5,6 +5,7 @@ from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 
 
+
 add_selectbox = st.sidebar.selectbox("Details/Developer",("Student Details","Developer"))
 if add_selectbox== "Developer":
     developer()
