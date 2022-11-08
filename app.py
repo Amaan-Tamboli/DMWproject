@@ -15,7 +15,7 @@ model = joblib.load('RealFakeModel')
 st.markdown('<h1 style="text-align:center;color:black;font-weight:bolder;font-size:100px;">FAKE NEWS PREDICTION</h1>',unsafe_allow_html=True)
 
 ip = st.text_input('Enter the news article : ')
-m = vect.fit_transform([ip])
+m = vect.transform([ip])
 op = model.predict(m)
 if st.button('Predict'):
   st.title(op[0])
