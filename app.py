@@ -18,13 +18,3 @@ elif(add_selectbox=="Prediction"):
     op = model.predict([ip])
     if st.button('Predict'):
       st.title(op[0])
-
-
-#     wordcloud = WordCloud(max_words = 2000 , width = 1600 , height = 800 , stopwords = STOPWORDS).generate(ip)
-    
-
-#     fig = plt.figure(figsize = (8, 8), facecolor = None)
-#     plt.imshow(wordcloud , interpolation = 'bilinear')
-#     plt.axis("off")
-#     plt.tight_layout(pad = 0)
-#     st.pyplot(fig)
