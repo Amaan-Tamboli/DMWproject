@@ -19,24 +19,11 @@ op = model.predict([ip])
 if st.button('Predict'):
   st.title(op[0])
   
-comment_words = ''
-stopwords = set(STOPWORDS)
-
-for val in df.CONTENT:
-
-    val = str(val)
- 
-    tokens = val.split()
-     
-    for i in range(len(tokens)):
-        tokens[i] = tokens[i].lower()
-     
-    comment_words += " ".join(tokens)+" "
  
 wordcloud = WordCloud(width = 800, height = 800,
                 background_color ='black',
                 stopwords = stopwords,
-                min_font_size = 10).generate(comment_words)
+                min_font_size = 10).generate(ip)
                       
 plt.figure(figsize = (8, 8), facecolor = None)
 plt.imshow(wordcloud)
