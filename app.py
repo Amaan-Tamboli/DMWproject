@@ -11,12 +11,11 @@ add_selectbox = st.sidebar.selectbox("Details/Developer",("Prediction","Develope
 if add_selectbox== "Developer":
     developer()
     
-model = joblib.load('RealFakeModel')
+model = joblib.load('Real-Fake')
 st.markdown('<h1 style="text-align:center;color:black;font-weight:bolder;font-size:100px;">FAKE NEWS PREDICTION</h1>',unsafe_allow_html=True)
 
 ip = st.text_input('Enter the news article : ')
-m = vect.transform([ip])
-op = model.predict(m)
+op = model.predict([m])
 if st.button('Predict'):
   st.title(op[0])
   
