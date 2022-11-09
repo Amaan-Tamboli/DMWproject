@@ -1,6 +1,6 @@
 # DMWproject
 
-dataset link : https://www.kaggle.com/datasets/shubh0799/fake-news
+dataset link : https://www.kaggle.com/datasets/shubh0799/fake-news \
 KNN model to detect fake news using Python.
 
 The news is classified into Fake or Real based on the Support vector algorithm.
